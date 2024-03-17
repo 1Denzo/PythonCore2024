@@ -1,10 +1,11 @@
+# Правильно просклонять слово "лет" в зависимости от введеного числительного.
 def format_currency(amount):
-    if amount % 10 == 1 and amount % 100 != 11:
-        return "рубль"
-    elif 1 < amount % 10 < 5 and (amount % 100 < 10 or amount % 100 >= 20):
-        return "рубля"
+    if amount == 1:
+        return "год"
+    elif 1 < amount < 5 :
+        return "года"
     else:
-        return "рублей"
+        return "лет"
 
 def main():
     chk = False
