@@ -1,4 +1,4 @@
-with open('Home_Made\\lr2\\Task3\\FileIO\\input.txt', 'r', encoding='utf-8') as f:
+with open('Home_Made\\mod2\\Task3\\FileIO\\input.txt', 'r', encoding='utf-8') as f:
     a = f.read(20)
     f.close()  # закрытие файла
 symbols = []
@@ -28,6 +28,6 @@ if   len(symbols) < 3:
 else: 
     sort(symbols)
     print(symbols)
-    w = open('Home_Made\\lr2\\Task3\\FileIO\\output.txt', 'w', encoding='utf-8')
+    w = open('Home_Made\\mod2\\Task3\\FileIO\\output.txt', 'w', encoding='utf-8')
     w.write(str(symbols[1]))  # запись c в файл
     w.close()  # закрытие файла

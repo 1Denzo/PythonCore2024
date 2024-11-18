@@ -1,4 +1,4 @@
-with open('Home_Made\lr2\Task5\FileIO\input.txt', 'r', encoding='utf-8') as f:
+with open('Home_Made\\mod2\\Task5\\FileIO\\input.txt', 'r', encoding='utf-8') as f:
     a = f.read(34)
     f.close()  # закрытие файла
     symbols = []
@@ -14,7 +14,7 @@ for symbol in a:
     if i == len(a):
         symbols.append(word)
 reverse = symbols[::-1]
-w = open('Home_Made\lr2\Task5\FileIO\output.txt', 'w', encoding='utf-8')  # открытие в режиме записи
+w = open('Home_Made\\mod2\\Task5\\FileIO\\output.txt', 'w', encoding='utf-8')  # открытие в режиме записи
 for domain in reverse:
     print(domain)
     w.write(domain + "\n")  # запись c в файл

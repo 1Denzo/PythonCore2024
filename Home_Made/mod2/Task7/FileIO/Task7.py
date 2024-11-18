@@ -1,6 +1,6 @@
 # На вход подается строка s и символ i.
 # Необходимо найти количество символов i, расположенных в начале строки.
-with open('Home_Made\lr2\Task7\FileIO\input.txt', 'r', encoding='utf-8') as f:
+with open('Home_Made\\mod2\\Task7\\FileIO\\input.txt', 'r', encoding='utf-8') as f:
     a = f.read(20)
     f.close() # закрытие файла
 b = a[::-1]
@@ -18,7 +18,7 @@ for let in a:
     if let != key:
         break
 print(i)
-w = open('Home_Made\lr2\Task7\FileIO\output.txt', 'w', encoding='utf-8')  # открытие в режиме записи
+w = open('Home_Made\\mod2\\Task7\\FileIO\\output.txt', 'w', encoding='utf-8')  # открытие в режиме записи
 w.write(str(i))  # запись c в файл
 w.close()  # закрытие файла
 

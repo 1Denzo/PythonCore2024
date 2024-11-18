@@ -1,4 +1,4 @@
-with open('Home_Made\lr2\Task6\FileIO\input.txt', 'r', encoding='utf-8') as f:
+with open('Home_Made\\mod2\\Task6\\FileIO\\input.txt', 'r', encoding='utf-8') as f:
     a = f.read(20)
     f.close()   # закрытие файла
     o = b = 0
@@ -7,7 +7,7 @@ for simbol in a:
         b += 1
     if simbol == '1':
         o += 1
-w = open('Home_Made\lr2\Task6\FileIO\output.txt', 'w', encoding='utf-8')  # открытие в режиме записи
+w = open('Home_Made\\mod2\\Task6\\FileIO\\output.txt', 'w', encoding='utf-8')  # открытие в режиме записи
 if b == o:
     print("yes")
     w.write("yes")  # запись c в файл

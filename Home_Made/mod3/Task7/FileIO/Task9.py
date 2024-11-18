@@ -1,11 +1,11 @@
-with open('input.txt', 'r', encoding='utf-8') as f: a = f.read(); f.close();
+# Человек вводит на сайте номер телефона, 
+# ему позволено для удобства использовать кроме плюса 
+# и цифр знаки ‘-’, ‘)’, ‘(’ и пробелы. 
+# Уберите их из ввода.
+
+with open('Home_Made\\mod3\\Task7\\FileIO\\input.txt', 'r', encoding='utf-8') as f: a = f.read(); f.close();
 d = a.replace(" ", "").replace("(", "").replace(")", "").replace("-", "")
-w = open('output.txt', 'w', encoding='utf-8');  w.write(d); w.close()
-
-# s[0] = a; num = (s[i].replace(k[i], "") for i in range (len(k))); print(s[1])
-# b = (a.replace(k[i], "") for i in k); print(b)
-
-
+w = open('Home_Made\\mod3\\Task7\\FileIO\\output.txt', 'w', encoding='utf-8');  w.write(d); w.close()
 
 
 

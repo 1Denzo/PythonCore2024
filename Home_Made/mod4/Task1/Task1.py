@@ -3,6 +3,7 @@
 # 1) Все числа равны
 # 2) Все числа разные
 # 3) Есть равные и неравные числа
+
 with open('input.txt', 'r', encoding='utf-8') as f: a = f.read(); f.close(); n = a.split(" "); ind = []
 # a = input("Введите последовательность чисел: ")
 for i in range(len(n)):
